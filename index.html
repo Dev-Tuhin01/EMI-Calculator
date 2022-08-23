@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Loan Calculator</h3>
-    <form action="#">
+    <header>
+        <h3>Loan Calculator</h3>
+    </header>
+    <form class="frm">
         <div class="row">
             <div class="inpgrp">
                 <label>Interest Type: </label>
@@ -20,16 +23,18 @@
                 <label>Loan Applied Date: </label>
                 <input type="date" name="LnApDate" id="LnApDate">
             </div>
+        </div>
+        <div class="row">
             <div class="inpgrp">
                 <label>Loan Amount: </label>
                 <input type="text" name = "LnAmt" id="LnAmt">
             </div>
-        </div>
-        <div class="row">
             <div class="inpgrp">
                 <label>ROI(%): </label>
                 <input type="text" name="roi" id="roi">
             </div>
+        </div>
+        <div class="row">
             <div class="inpgrp">
                 <label>Loan Tenure: </label>
                 <select name="LnTen" id="LnTen">
@@ -45,7 +50,7 @@
                 </select>
             </div>
         </div>
-        <div class="row"><button id="sub">Check</button></div>
+        <div class="row" id="buttons"><button id="sub">Check</button></div>
     </form>
 </body>
 </html>

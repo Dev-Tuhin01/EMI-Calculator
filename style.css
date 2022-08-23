@@ -4,3 +4,40 @@
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
 }
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.frm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.25rem 0.6rem;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.inpgrp{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+}
+
+#buttons{
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+input{
+    max-height: 100%;
+}
