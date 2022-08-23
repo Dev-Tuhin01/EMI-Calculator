@@ -23,7 +23,7 @@ header
     display: flex;
     flex-wrap: wrap;
     margin: 0.25rem 0.6rem;
-    width: 50%;
+    width: 70%;
     justify-content: space-between;
 }
 
@@ -31,6 +31,7 @@ header
     display: flex;
     justify-content: space-evenly;
     margin: 0.5rem;
+
 }
 
 #buttons{
@@ -38,6 +39,18 @@ header
     margin: 0.5rem;
 }
 
-input{
-    max-height: 100%;
+button{
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    width: 12rem;
+    height: 1.5rem;
+}
+
+input:focus,input:hover,select:focus,select:hover{
+    background-color: bisque;
+}
+
+button:hover{
+    background-color: bisque;
 }
