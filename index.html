@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <h3>Loan Calculator</h3>
+    <form action="#">
+        <div class="row">
+            <div class="inpgrp">
+                <label>Interest Type: </label>
+                <select name="intType" id="intType">
+                    <option value="flat">Flat</option>
+                </select>
+            </div>
+            <div class="inpgrp">
+                <label>Loan Applied Date: </label>
+                <input type="date" name="LnApDate" id="LnApDate">
+            </div>
+            <div class="inpgrp">
+                <label>Loan Amount: </label>
+                <input type="text" name = "LnAmt" id="LnAmt">
+            </div>
+        </div>
+        <div class="row">
+            <div class="inpgrp">
+                <label>ROI(%): </label>
+                <input type="text" name="roi" id="roi">
+            </div>
+            <div class="inpgrp">
+                <label>Loan Tenure: </label>
+                <select name="LnTen" id="LnTen">
+                    <option value="36">36</option>
+                    <option value="52">52</option>
+                    <option value="84">84</option>
+                </select>
+            </div>
+            <div class="inpgrp">
+                <label>Freqency of Instalment: </label>
+                <select name="freq" id="freq">
+                    <option value="weekly">Weekly</option>
+                </select>
+            </div>
+        </div>
+        <div class="row"><button id="sub">Check</button></div>
+    </form>
+</body>
+</html>
