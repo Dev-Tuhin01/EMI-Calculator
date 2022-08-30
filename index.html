@@ -27,17 +27,17 @@
         <div class="row">
             <div class="inpgrp">
                 <label>Loan Amount: </label>
-                <input type="text" name = "LnAmt" id="LnAmt">
+                <input type="text" name = "LnAmt" id="LnAmt" autocomplete="false" >
             </div>
             <div class="inpgrp">
                 <label>ROI(%): </label>
-                <input type="text" name="roi" id="roi">
+                <input type="text" name="roi" id="roi" value="22" disabled>
             </div>
         </div>
         <div class="row">
             <div class="inpgrp">
                 <label>Loan Tenure: </label>
-                <select name="LnTen" id="LnTen" onformchange="">
+                <select name="LnTen" id="LnTen" onchange="interestSetup()">
                     <option value="46">46</option>
                     <option value="52">52</option>
                     <option value="69">69</option>

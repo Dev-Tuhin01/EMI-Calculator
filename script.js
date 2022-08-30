@@ -22,6 +22,29 @@ function padTo2Digits(num) {
   }
 
 console.log(loanAppliedDate.value);
+//----------------------------------------------
+
+//setting up interest according to tenure
+function interestSetup(){
+    console.log("interest setup worrking");
+    let interest = document.getElementById("roi");
+    let tenure = document.getElementById("LnTen");
+    switch (tenure.value) {
+        case "46":
+            interest.value = "22";
+            break;
+        case "52":
+            interest.value = "19.6";
+            break;
+        case "69":
+            interest.value = "29.4";
+            break;
+        case "78":
+            interest.value = "20.7"
+        default:
+            break;
+    }
+}
 
 //calculate function will be in use when user clicks on Check function
 //it will get the value of loan amount, Rate of interest, Tenure and loan applied date.
@@ -47,6 +70,11 @@ function calculate() {
     console.log(years);
 }
 
+
+//calculating complex interest
 function complexInterestCalculate(principle,rateofInterest,time) {
-    
+    const base = 1 + (rateofInterest/100);
+    const interest = principle * Math.pow(base,time);
+    return interest;
 }
+//---------------------------------------------
