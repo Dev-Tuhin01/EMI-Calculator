@@ -54,3 +54,14 @@ input:focus,input:hover,select:focus,select:hover{
 button:hover{
     background-color: bisque;
 }
+
+.installment-table{
+    padding: 1rem 5rem;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}

@@ -36,11 +36,17 @@ function calculate() {
     let loanTenure = document.getElementById("LnTen").value;
     let startingDate = loanAppliedDate.value;
 
-    
+    let years = loanTenure / 52
+
 
     //debugging input datas
     console.log(loanAmmount);
     console.log(rateOfInterest);
     console.log(loanTenure);
     console.log(startingDate);
+    console.log(years);
+}
+
+function complexInterestCalculate(principle,rateofInterest,time) {
+    
 }

@@ -37,10 +37,11 @@
         <div class="row">
             <div class="inpgrp">
                 <label>Loan Tenure: </label>
-                <select name="LnTen" id="LnTen">
-                    <option value="36">36</option>
+                <select name="LnTen" id="LnTen" onformchange="">
+                    <option value="46">46</option>
                     <option value="52">52</option>
-                    <option value="84">84</option>
+                    <option value="69">69</option>
+                    <option value="78">78</option>
                 </select>
             </div>
             <div class="inpgrp">
@@ -53,6 +54,28 @@
         <div class="row" id="buttons"><button id="sub" type="button" onclick="calculate()">Check</button></div>
     </form>
     
+    <div class="installment-table">
+        <table class="Installment-chart">
+            <thead>
+                <tr>
+                <th>Instalment</th>
+                <th>Date</th>
+                <th>Principle O/S</th>
+                <th>EMI</th>
+                <th>Interest Payment</th>
+                <th>Principle Payment</th>
+                <th>Balance</th>
+                <th>Loan paid</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
