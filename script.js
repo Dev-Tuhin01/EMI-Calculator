@@ -59,8 +59,7 @@ function calculate() {
     let loanTenure = document.getElementById("LnTen").value;
     let startingDate = loanAppliedDate.value;
 
-    let years = loanTenure / 52
-
+    appendRows(loanAmmount,loanTenure,rateOfInterest);
 
     //debugging input datas
     console.log(loanAmmount);
@@ -69,7 +68,7 @@ function calculate() {
     console.log(startingDate);
     console.log(years);
 }
-
+//--------------------------
 
 //calculating complex interest
 function complexInterestCalculate(principle,rateofInterest,time) {
@@ -78,3 +77,26 @@ function complexInterestCalculate(principle,rateofInterest,time) {
     return interest;
 }
 //---------------------------------------------
+
+
+//calculate the extra floating values to get precise values
+function precissionControl(principle,tenure) {
+    const precissionControl = Math.floor(((principle/tenure) - Math.floor(principle/tenure)) * tenure);
+    return precissionControl;
+}
+
+//adding rows to table
+function appendRows(principle,tenure,interest,startDate) {
+        const time = tenure / 52;
+        let total = complexInterestCalculate(principle,interest,time);
+        let extra = precissionControl(principle,tenure);
+        const totalDays = tenure * 7;
+        let absTotal = total + extra;
+        let totalInterest = absTotal - principle;
+
+        let tableFoot = document.getElementById("foot");
+        let footRow = tableFoot.insertRow();
+        footRow.innerHTML = "<td>Total Number of Days</td><td>" + totalDays + "</td><td>Total:</td><td>" + absTotal + "</td><td>" + totalInterest + "</td><td>" + principle + "</td><td></td><td></td>";
+
+        
+}
